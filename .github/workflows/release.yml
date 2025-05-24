@@ -12,6 +12,7 @@ concurrency:
 jobs:
   build-release:
     uses: ./.github/workflows/build.yml
+    runs-on: ubuntu-latest
     secrets: inherit
     permissions: write-all
     with:
